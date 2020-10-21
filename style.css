@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.formulario_registro{
+	width: 400px;
+	background: #ECECEC;
+	padding: 20px;
+	margin: auto;
+	margin-top: 75px;
+	font-family:arial;
+}
+.formulario_registro h4{
+	font-size: 20px;
+	text-align: center;
+}

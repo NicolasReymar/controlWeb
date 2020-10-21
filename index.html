@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="text/javascript">
+			function cambioValor(){
+				if (document.getElementById('tipo_dni').checked){
+					document.getElementById('box_dni').style.display = 'block';
+					document.getElementById('box_rut').style.display = 'none';
+				} else {
+					document.getElementById('box_dni').style.display = 'none';
+					document.getElementById('box_rut').style.display = 'block';
+				}
+
+			}
+		</script>
+
+		<title>Formulario ing web</title>
+	</head>
+
+	<body>
+
+		<section class="formulario_registro">
+			<h4>Formulario:</h4>
+			<label for="nombre_completo">Nombre Completo
+				<input type="text" name="nombre_completo">
+			</label>
+			<br>
+			<label for="correo_electronico">Correo electrónico
+				<input type="email" name="correo_electronico">
+			</label>
+			<br>
+
+
+			<b>Ingrese su tipo de documento :</b>
+			<br>
+			<label for="tipo_dni">
+				<input type="radio" name="tipo_documento" value="tipo_dni" onclick="javascript:cambioValor();" id="tipo_dni">
+				DNI
+			</label>
+			<br>
+			<label for="tipo_rut">
+				<input type="radio" name="tipo_documento" value="tipo_rut" onclick="javascript:cambioValor();" id="tipo_rut">
+				RUT
+			</label>
+
+
+
+			<div id="box_dni" style="display:none">
+					Ingrese su DNI:
+					<input type="text" name="valor_dni" id="valorDni">
+			</div>
+
+			<div id="box_rut" style="display:none">
+					Ingrese su RUT:
+					<input type="number" name="valor_rut" id="valorRut">
+			</div>
+
+
+
+			<br>
+			<input type="submit" value=" Enviar ">
+
+
+
+
+
+
+		</section>
+	</body>
+
+
+
+</html>
